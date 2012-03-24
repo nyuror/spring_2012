@@ -1,0 +1,21 @@
+<h1>Listing myclasses</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @myclasses.each do |myclass| %>
+  <tr>
+    <td><%= link_to 'Show', myclass %></td>
+    <td><%= link_to 'Edit', edit_myclass_path(myclass) %></td>
+    <td><%= link_to 'Destroy', myclass, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Myclass', new_myclass_path %>
