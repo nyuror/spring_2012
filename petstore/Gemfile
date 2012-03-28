@@ -40,5 +40,8 @@ gem 'jquery-rails'
 group :test, :development do
   gem "rspec-rails"
   gem "nifty-generators"
+  gem "capybara"
+  gem "launchy"
+  gem "database_cleaner"
 end
 

@@ -24,7 +24,7 @@ describe PetsController do
   # Pet. As you add validations to Pet, be sure to
   # update the return value of this method accordingly.
   def valid_attributes
-    {}
+    {:name => "fluffy"}
   end
   
   # This should return the minimal set of values that should be in the session
