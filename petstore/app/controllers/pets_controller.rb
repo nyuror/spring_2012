@@ -1,4 +1,6 @@
 class PetsController < ApplicationController
+  before_filter :authorize, only: [:edit, :update]
+  
   # GET /pets
   # GET /pets.json
   def index
