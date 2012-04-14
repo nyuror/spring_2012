@@ -11,12 +11,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120322171136) do
+ActiveRecord::Schema.define(:version => 20120413003735) do
 
   create_table "pets", :force => true do |t|
     t.string   "name"
     t.string   "species"
     t.integer  "age"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "products", :force => true do |t|
+    t.string   "name"
+    t.integer  "stock"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
