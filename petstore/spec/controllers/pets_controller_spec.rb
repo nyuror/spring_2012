@@ -20,6 +20,10 @@ require 'spec_helper'
 
 describe PetsController do
 
+  before(:each)do
+    controller.should_receive(:current_user).any_number_of_times.and_return(User.new)
+  end
+
   # This should return the minimal set of attributes required to create a valid
   # Pet. As you add validations to Pet, be sure to
   # update the return value of this method accordingly.
