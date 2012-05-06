@@ -1,5 +1,6 @@
 class PetsController < ApplicationController
-  before_filter :authorize, only: [:edit, :update]
+  # before_filter :authorize, only: [:edit, :update]
+  load_and_authorize_resource
   
   # GET /pets
   # GET /pets.json
